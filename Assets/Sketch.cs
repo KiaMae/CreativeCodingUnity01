@@ -6,8 +6,8 @@ public class Sketch : MonoBehaviour {
 
 	void Start () {
 		
-		int totalCubes = 8;
-		float totalDistance = 3.0f;
+		int totalCubes = 12;
+		float totalDistance = 2.8f;
 	
 	//Sin Distro
 		for (int i = 0; i < totalCubes; i++)
@@ -15,7 +15,7 @@ public class Sketch : MonoBehaviour {
 			float perc = i / (float)totalCubes;
 			float sin = Mathf.Sin (perc * Mathf.PI/2);
 
-			float x = 2.0f + sin * totalDistance;
+			float x = 1.8f + sin * totalDistance;
 			float y = 5.0f;
 			float z = 0.0f;
 
