@@ -9,3 +9,5 @@ public class CubeScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spinSpeed = new Vector3 (Random.value, Random.value, Random.value);
+		spinAxis = Vector3.up;
+		spinAxis.x = (Random.value - Random.value * .1f);
