@@ -7,7 +7,7 @@ public class Sketch : MonoBehaviour {
 	void Start () {
 		
 		int totalCubes = 8;
-		float totalDistance = 2.5f;
+		float totalDistance = 3.0f;
 	
 	//Sin Distro
 		for (int i = 0; i < totalCubes; i++)
