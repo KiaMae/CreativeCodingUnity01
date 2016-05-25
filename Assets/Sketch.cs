@@ -6,8 +6,8 @@ public class Sketch : MonoBehaviour {
 
 	void Start () {
 		
-		int totalCubes = 12;
-		float totalDistance = 2.8f;
+		int totalCubes = 30;
+		float totalDistance = 2.9f;
 	
 	//Sin Distro
 		for (int i = 0; i < totalCubes; i++)
@@ -21,7 +21,7 @@ public class Sketch : MonoBehaviour {
 
 			var newCube = (GameObject)Instantiate (myPrefab, new Vector3 (x, y, z), Quaternion.identity);
 			newCube.GetComponent<CubeScript>().SetSize(.5f*(1.0f - perc));	
-			newCube.GetComponent<CubeScript> ().rotateSpeed = .2f + perc;
+			newCube.GetComponent<CubeScript> ().rotateSpeed = .5f + perc;
 		}
 	}
 	void Update () {
